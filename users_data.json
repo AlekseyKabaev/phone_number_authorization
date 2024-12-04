@@ -1,0 +1,105 @@
+[
+  {
+    "id": 11,
+    "phone": "79159674182",
+    "name": null,
+    "last_name": null,
+    "invite_code": "2tN0Fm",
+    "activated_invite_code": null,
+    "invited_users": []
+  },
+  {
+    "id": 4,
+    "phone": "79997776655",
+    "name": null,
+    "last_name": null,
+    "invite_code": "78fraF",
+    "activated_invite_code": null,
+    "invited_users": []
+  },
+  {
+    "id": 5,
+    "phone": "79025556465",
+    "name": null,
+    "last_name": null,
+    "invite_code": "r32V5u",
+    "activated_invite_code": null,
+    "invited_users": []
+  },
+  {
+    "id": 7,
+    "phone": "79995456633",
+    "name": null,
+    "last_name": null,
+    "invite_code": "9xm5eS",
+    "activated_invite_code": null,
+    "invited_users": []
+  },
+  {
+    "id": 3,
+    "phone": "79056460615",
+    "name": "Alex",
+    "last_name": "Test",
+    "invite_code": "7X0QTy",
+    "activated_invite_code": "7X0QTy",
+    "invited_users": [
+      "79056460615"
+    ]
+  },
+  {
+    "id": 12,
+    "phone": "79995552211",
+    "name": null,
+    "last_name": null,
+    "invite_code": "N32yFt",
+    "activated_invite_code": null,
+    "invited_users": []
+  },
+  {
+    "id": 17,
+    "phone": "79066460615",
+    "name": null,
+    "last_name": null,
+    "invite_code": "a59yJw",
+    "activated_invite_code": null,
+    "invited_users": []
+  },
+  {
+    "id": 18,
+    "phone": "79998887755",
+    "name": null,
+    "last_name": null,
+    "invite_code": "Wa14ba",
+    "activated_invite_code": null,
+    "invited_users": []
+  },
+  {
+    "id": 16,
+    "phone": "79025556461",
+    "name": "Test",
+    "last_name": "Test",
+    "invite_code": "r32V5s",
+    "activated_invite_code": null,
+    "invited_users": []
+  },
+  {
+    "id": 19,
+    "phone": "71112223344",
+    "name": "Test",
+    "last_name": "Test",
+    "invite_code": "93tnLW",
+    "activated_invite_code": null,
+    "invited_users": []
+  },
+  {
+    "id": 14,
+    "phone": "79992221144",
+    "name": "Test",
+    "last_name": "Test",
+    "invite_code": "8l6BHn",
+    "activated_invite_code": "8l6BHn",
+    "invited_users": [
+      "79992221144"
+    ]
+  }
+]

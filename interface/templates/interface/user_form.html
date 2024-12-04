@@ -1,0 +1,26 @@
+{% extends 'interface/base.html' %}
+{% block content %}
+<section class="py-5 text-center container">
+    <div class="col-lg-6 col-md-8 mx-auto">
+        <h3 class="font-weight-bold">Редактирование профиля</h3>
+    </div>
+</section>
+<div class="container">
+    <form class="row" method="post">
+        <div class="col-6">
+                <div class="card-body">
+                    <div class="col-lg-6 col-md-8 mx-auto">
+                        <h7 class="font-weight-bold"> Телефон: {{user.phone}}</h7>
+                    </div>
+                    {% csrf_token %}
+                    {{ form.as_p }}
+                    <button type="submit" class="btn btn-success">
+                        Сохранить
+                    </button>
+                    <a class="btn btn-danger" href="{% url 'interface:user_detail' %}"
+                       role="button">Назад</a>
+                </div>
+            </div>
+    </form>
+</div>
+{% endblock %}

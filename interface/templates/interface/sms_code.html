@@ -1,0 +1,20 @@
+{% extends 'interface/base.html' %}
+{% block content %}
+
+<div class="container">
+    <form class="row" method="post" enctype="multipart/form-data">
+        <div class="col-20">
+            <div class="card">
+                <div class="card-body">
+                    {% csrf_token %}
+                    <input type="hidden" name="phone" value="{{request.GET.phone}}">
+                    {{ form.as_p }}
+                </div>
+                <button type="submit" class="btn btn-primary">
+                    Войти
+                </button>
+            </div>
+        </div>
+    </form>
+</div>
+{% endblock %}

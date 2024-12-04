@@ -1,0 +1,33 @@
+{% extends 'interface/base.html' %}
+{% block content %}
+
+<section class="py-5 text-center container">
+    <div class="col-lg-6 col-md-8 mx-auto">
+        <h3 class="font-weight-bold">Профиль пользователя</h3>
+    </div>
+</section>
+
+<div class="container">
+    <div class="col-20">
+        <div class="card">
+            <div class="card-body">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <p class="card-text">Телефон: {{user.phone}}</p>
+                <p class="card-text">Имя: {{user.name}}</p>
+                <p class="card-text">Фамилия: {{user.last_name}}</p>
+                <p class="card-text">Пригласительный код: {{user.invite_code}}</p>
+                <p class="card-text">Использованный пригласительный код: {{user.activated_invite_code}}</p>
+                <p class="card-text">Пользователи с вашим пригласительным кодом: {% for i in user.get_invited_users %}</p>
+                <p class="mb-2">{{i}}<br/></p>
+                {% endfor %}
+            </div>
+
+            <a class="btn btn-primary rounded" href="{% url 'interface:user_update' %}" role="button">Редактировать</a>
+            <a class="btn btn-danger" href="{% url 'interface:login' %}" role="button">Выйти</a>
+
+        </div>
+
+    </div>
+</div>
+{% endblock %}
